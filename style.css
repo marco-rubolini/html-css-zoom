@@ -92,17 +92,18 @@ footer {
     width: 200px;
     flex-shrink: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* align-items: center;
+    justify-content: space-evenly; */
 }
 
-.footer-left i, .footer-center i:not(.fa-arrow-up) {
+.footer-left i, .footer-center i:not(.fa-arrow-up), .footer-left {
     color: #d3d3d3;
 }
 
 .fa-arrow-up {
     background-color: green;
-    padding: 10px 20px;
+    padding: 0px 20px;
     border-radius: 10px;
     color: black;
 }
@@ -111,13 +112,22 @@ footer {
     width: 1200px;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: #d3d3d3;
 }
 
-.icon-text {
-    text-align: center;
+.icon-meeting {
     margin: 0 20px;
+}
+
+.icon-audio-video {
+    margin-right: 5px;
+}
+
+.icon-audio-video, .icon-meeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .text-capitalize {
@@ -138,4 +148,5 @@ footer {
     border: 0;
     line-height: 80px;
     cursor: pointer;
+    font-size: 14px;
 }
