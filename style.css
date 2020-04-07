@@ -93,6 +93,7 @@ footer {
     flex-shrink: 0;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
     /* align-items: center;
     justify-content: space-evenly; */
 }
@@ -103,7 +104,6 @@ footer {
 
 .fa-arrow-up {
     background-color: green;
-    padding: 0px 20px;
     border-radius: 10px;
     color: black;
 }
@@ -113,13 +113,15 @@ footer {
     display: flex;
     justify-content: center;
     color: #d3d3d3;
+    flex-shrink: 1;
 }
 
 .icon-meeting {
     margin: 0 20px;
+    text-align: center;
 }
 
-.icon-audio-video {
+.icon-audio-video:not(:last-child){
     margin-right: 5px;
 }
 
@@ -149,4 +151,10 @@ footer {
     line-height: 80px;
     cursor: pointer;
     font-size: 14px;
+}
+
+@media all and (max-width: 768px){
+    .footer-center {
+        display: none;
+    }
 }
